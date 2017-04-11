@@ -1,0 +1,53 @@
+.top-contacts {
+  display: flex;
+  text-align: left;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.main {
+  .top-contacts {
+    position: static;
+    margin-top: 45px;
+  }
+}
+.top-adress {
+  position: relative;
+  padding-left: 40px;
+  a {
+    text-decoration: none;
+    color: $font-color;
+
+    @include font-size(20);
+    &:hover {
+      color: $link-color-hov;
+    }
+  }
+}
+.top-logo {
+  img {
+    display: block;
+  }
+}
+.top-phone {
+  position: relative;
+  padding-left: 40px;
+  a {
+    text-decoration: none;
+    color: $font-color;
+
+    @include font-size(24);
+    &:hover {
+      color: $link-color-hov;
+    }
+  }
+}
+.top-contacts__svg {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+
+  fill: $highlight;
+}

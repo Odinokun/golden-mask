@@ -8,4 +8,8 @@ $(function() {
   require('./modules/smoothScroll')();
   // end   Chrome Smooth Scroll
 
+  // begin Full Page Scroll
+  require('./modules/fullPageScroll')();
+  // end   Full Page Scroll
+
 });

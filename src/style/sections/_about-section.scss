@@ -1,0 +1,136 @@
+.about-section__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: space-between;
+}
+.about-section__header {
+  z-index: 20;
+  padding-top: 80px;
+  text-align: center;
+}
+.about-section__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $font-color;
+
+  @include font-size(48);
+}
+.about-section__subtitle {
+  line-height: 22px;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include font-size(18);
+}
+.about-section__body {
+  display: flex;
+  height: 100%;
+  background-image: url('../img/bg-about-section.png');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: contain;
+
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-section__body-inn {
+  display: flex;
+  width: 100%;
+
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-section__body-row {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+}
+.about-section-item {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  max-width: 260px;
+  margin-bottom: 50px;
+  padding: 0 5px;
+  text-decoration: none;
+  color: $font-color;
+
+  align-items: center;
+  justify-content: flex-start;
+  &:hover {
+    .about-section-item__circle {
+      border-color: $highlight;
+      svg {
+        fill: $highlight;
+      }
+    }
+  }
+}
+.about-section-item__circle {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  transition: .5s;
+  border: 2px solid #8b8d99;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+  svg {
+    max-width: 58px;
+    max-height: 64px;
+    transition: .5s;
+
+    fill: #8b8d99;
+  }
+}
+
+.about-section-page {
+  z-index: 20;
+  padding: 10px 35px 20px 35px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(136, 139, 151, .35);
+}
+.about-section-page__header {
+  padding: 20px;
+  text-align: center;
+}
+.about-section-page__title {
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  text-transform: none;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 110px;
+    height: 20px;
+    margin: auto;
+    content: '';
+    background-image: url('../img/page-header__title.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  &::after {
+    right: calc(100% + 20px);
+  }
+  &::before {
+    left: calc(100% + 20px);
+    transform: rotate(180deg);
+  }
+}

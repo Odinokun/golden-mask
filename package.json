@@ -30,6 +30,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "fullpage.js": "^2.9.4",
     "jquery": "2.2.4",
     "normalize.css": "^4.1.1",
     "svg4everybody": "^2.1.4"

@@ -6,11 +6,16 @@
 
 //elements
 // @import 'elements/breadcrumbs';
-@import 'elements/pagination';
+// @import 'elements/pagination';
+@import 'elements/top-contacts';
+@import 'elements/link-btn';
+@import 'elements/clouds';
 
 //section
-@import 'sections/footer';
 @import 'sections/header';
+@import 'sections/top-section';
+@import 'sections/about-section';
+@import 'sections/footer';
 
 //pages
 @import 'pages/index';

@@ -1,0 +1,54 @@
+.section {
+  position: relative;
+}
+.fp-tooltip {
+  font-family: $font !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $highlight !important;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  width: 18px;
+  height: 18px;
+  margin: 10px;
+}
+#fp-nav ul li a span {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+  border: 2px solid #888b97;
+  background-color: transparent;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 18px;
+  height: 18px;
+  margin: -2px 0 0 -2px;
+  border: 2px solid $highlight;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 18px;
+  height: 18px;
+  margin: -2px 0 0 -2px;
+  border: 2px solid $highlight;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    background-color: $highlight;
+  }
+}
+#fp-nav ul li .fp-tooltip {
+  top: 8px;
+}

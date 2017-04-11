@@ -1,0 +1,47 @@
+.top-section__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: space-between;
+}
+.top-section__header {
+  position: relative;
+  z-index: 10;
+  padding-top: 50px;
+  text-align: center;
+}
+.top-section__title {
+  margin: 20px 0 10px 0;
+  text-transform: uppercase;
+  color: $font-color;
+
+  @include font-size(36);
+}
+.top-section__subtitle {
+  text-transform: uppercase;
+  color: $font-color;
+
+  @include font-size(18);
+}
+.top-section__body img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -100px;
+  left: 0;
+  margin: auto;
+}
+.top-section__footer {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 60px;
+  text-align: center;
+  z-index: 20;
+}
+.top-section__footer-text {
+  text-transform: uppercase;
+
+  @include font-size(16);
+}

@@ -1,0 +1,43 @@
+.link-btn {
+  position: relative;
+  display: inline-block;
+  padding: 11px 60px;
+  text-decoration: none;
+  span {
+    position: relative;
+    color: #a28148;
+
+    @include font-size(20);
+  }
+  &::after,
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    transition: opacity .5s;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  &::after {
+    background-image: url('../img/bg-link-btn.svg');
+  }
+  &::before {
+    opacity: 0;
+    background-image: url('../img/bg-link-btn-active.svg');
+  }
+  &:hover {
+    color: #a28148;
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
+}

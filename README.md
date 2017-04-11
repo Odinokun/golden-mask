@@ -1,4 +1,4 @@
-<h1>Odinokun-start</h1>
+<h1>Golden mask</h1>
 
 <h2>Используемые технологии:</h2>
  - Gulp 4.0
