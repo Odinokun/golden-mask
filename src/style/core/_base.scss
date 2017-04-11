@@ -156,3 +156,7 @@ ul {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(136, 139, 151, .35);
 }
+// обнуление slick slider loader
+.slick-loading .slick-list {
+  background: none;
+}

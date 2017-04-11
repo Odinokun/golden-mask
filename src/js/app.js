@@ -12,4 +12,8 @@ $(function() {
   require('./modules/fullPageScroll')();
   // end   Full Page Scroll
 
+  // begin Interior section Slider
+  require('./modules/interiorSlider')();
+  // end Interior section Slider
+
 });

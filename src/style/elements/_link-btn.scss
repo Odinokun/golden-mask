@@ -1,7 +1,9 @@
 .link-btn {
   position: relative;
   display: inline-block;
-  padding: 11px 60px;
+  width: 100%;
+  max-width: 230px;
+  padding: 10px;
   text-decoration: none;
   span {
     position: relative;
