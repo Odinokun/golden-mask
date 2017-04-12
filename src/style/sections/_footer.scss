@@ -1,6 +1,11 @@
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
   text-align: center;
-  background-color: #f3f2f8;
+  background-color: #fff;
   .container {
     padding: 0 20px 15px 20px;
   }
