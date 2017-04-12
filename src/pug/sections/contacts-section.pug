@@ -1,0 +1,47 @@
+// begin contacts section
+#section5.section.contacts-section
+  include ../elements/clouds-top
+
+  .container.contacts-section__container
+    .contacts-section__header
+      h2.contacts-section__title Контакты
+      .contacts-section__header-row
+
+        .contacts-section__header-item.adress
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") 
+            svg
+              use(xlink:href="assets/img/sprite.svg#marker")
+            |пр. Мориса Тореза, д. 36/1
+            br
+            |с 20:00 до 6:00
+
+        .contacts-section__header-item.phone
+          a(href="tel:+79219191718") 
+            svg
+              use(xlink:href="assets/img/sprite.svg#phone")
+            |+7 (921) 919-17-18
+
+        .contacts-section__header-item.mail
+          a(href="mailto:info@goldenmask-club.ru") 
+            svg
+              use(xlink:href="assets/img/sprite.svg#mail")
+            |info@goldenmask-club.ru
+
+
+    .contacts-section__body
+      .contacts-section__body-row
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts-section__body-item
+          .contacts-section__body-circle.vk
+            svg
+              use(xlink:href="assets/img/sprite.svg#vk")
+          h4.contacts-section__body-title VKontakte
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts-section__body-item
+          .contacts-section__body-circle.inst
+            svg
+              use(xlink:href="assets/img/sprite.svg#inst")
+          h4.contacts-section__body-title Instagram
+
+
+  include ../elements/clouds-bottom
+    
+// end contacts section
