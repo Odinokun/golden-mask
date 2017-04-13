@@ -16,4 +16,8 @@ $(function() {
   require('./modules/interiorSlider')();
   // end Interior section Slider
 
+  // begin Tab in join section index.html
+  require('./modules/joinTabs')();
+  // end Tab in join section index.html
+
 });
