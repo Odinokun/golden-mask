@@ -1,0 +1,16 @@
+  .menu__article {
+  padding-bottom: 30px;
+}
+
+.menu__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: $highlight;
+
+  @include font-size(24);
+}
+.menu__item {
+  padding: 7px;
+
+  @include font-size(18);
+}

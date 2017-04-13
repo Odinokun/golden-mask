@@ -1,0 +1,83 @@
+extends ../_template
+
+block variables
+  - var title = 'Меню'
+  - var pageHeaderTitle = 'Внутренняя страница'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    
+    include ../elements/clouds-top
+
+    .container
+
+      include ../elements/top-contacts
+      
+      .page-list
+        header.page-header
+          h1.page-header__title Меню
+
+        article.menu__article
+          h3.menu__title Коктейли классические / Сocktails classic
+
+          ul.menu__list
+            li.menu__item Апельсиновый рай / Orange Paradise
+            li.menu__item Б-52 / B-52
+            li.menu__item Белый русский / White Russian
+            li.menu__item Голубая Маргарита / Blue Margarita
+            li.menu__item Джин-Тоник / Dzhin-Tonik
+            li.menu__item Золотая маска / Golden Mask
+            li.menu__item Искушение / Temptation
+            li.menu__item Лонг Айленд Айсд Ти / Long Island Iced Tea
+            li.menu__item Маргарита / Margarita
+            li.menu__item Мохито классический / Mojito classic
+            li.menu__item Мохито клубничный / Mojito strawberry
+            li.menu__item Мужская Сила / Man's Strength
+            li.menu__item Оргазм / Orgasm
+            li.menu__item Пина Колада / Pina Colada
+            li.menu__item Розовая Пантера / Pink Panther
+            li.menu__item Рыжая собака / Red Dog
+            li.menu__item Секс на пляже / Sex on the Beach
+            li.menu__item Бакарди Орандж / Bacardi Orange
+
+        article.menu__article
+          h3.menu__title Коктейли безалкогольные /Сocktails nonalcoholic
+
+          ul.menu__list
+            li.menu__item Империя / Empire
+            li.menu__item Мохито б/а / Mojito nonalcoholic
+            li.menu__item Пина Колада б/а / Pina Colada nonalcoholic
+            li.menu__item Розовый Ангел / Pink Angel
+
+
+        article.menu__article
+          h3.menu__title Безалкогольные напитки / Alcohol-free drinks
+
+          ul.menu__list
+            li.menu__item Соки / Juices
+            li.menu__item Свежевыжатые соки / Fresh juices
+            li.menu__item Кофе / Coffe
+            li.menu__item Чай в ассортименте (с вареньем и медом) / Tea in assortment (with jam and honey)
+
+        article.menu__article
+          h3.menu__title Виски / WHISKEY
+
+          ul.menu__list
+            li.menu__item Ред Лейбл Джонни Уокер / Red Label
+            li.menu__item Блэк Лейбл Джонни Уокер / Black Label
+            li.menu__item Джек Дэниелс / Jack Daniels
+            li.menu__item Джемисон 12 лет / Jamison 12 y.o.
+            li.menu__item Джемисон / Jamison
+            li.menu__item Макаллан 12 лет / Macallan 12 y.o.
+            li.menu__item Макаллан 18 лет / Macallan 18 y.o.
+            li.menu__item Чивас Ригал 12 лет / Chivas Regal 12 y.o.
+            li.menu__item Чивас Ригал 18 лет / Chivas Regal 18 y.o.
+            li.menu__item Дюарс 12 лет / Dewars 12 y.o.
+    
+    include ../elements/clouds-bottom
+  //end   content
+
+  include ../sections/footer

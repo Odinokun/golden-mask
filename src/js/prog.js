@@ -4,7 +4,10 @@
 $(document).ready(function ($) {
   pageWidget([
     'index',
-    'inner'
+    'inner',
+    'gallery',
+    'menu',
+    '404'
     ]);
 });
 

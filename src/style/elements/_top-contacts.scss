@@ -4,10 +4,13 @@
 
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 20;
 }
 .main {
   .top-contacts {
-    position: static;
+    // position: static;
+
     margin-top: 45px;
   }
 }
