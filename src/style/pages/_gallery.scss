@@ -1,0 +1,68 @@
+ .gallery-list {
+  position: relative;
+  z-index: 20;
+  margin-bottom: 50px;
+}
+.gallery {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // justify-content: space-around;
+}
+.gallery__item {
+  width: 31.5%;
+  margin-bottom: 15px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+//lightbox
+.lightboxOverlay {
+  z-index: 10000;
+}
+.lightbox .lb-image {
+  border: none;
+}
+.lb-prev,
+.lb-next {
+  position: relative;
+  opacity: 1 !important;
+  &::before {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 48px;
+    height: 42px;
+    margin: auto;
+    content: '';
+    background-image: url('../img/interior-slider-arr.png');
+    background-repeat: no-repeat;
+  }
+}
+.lb-prev {
+  &::before {
+    left: -48px;
+    background-position: 0 100%;
+  }
+  &:hover {
+    &::before {
+      background-position: 0 1px;
+    }
+  }
+}
+.lb-next {
+  &::before {
+    right: -48px;
+    background-position: 100% 100%;
+  }
+  &:hover {
+    &::before {
+      background-position: 100% 1px;
+    }
+  }
+}

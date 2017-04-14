@@ -32,6 +32,7 @@
   "dependencies": {
     "fullpage.js": "^2.9.4",
     "jquery": "2.2.4",
+    "lightbox2": "^2.9.0",
     "normalize.css": "^4.1.1",
     "slick-carousel": "^1.6.0",
     "svg4everybody": "^2.1.4"

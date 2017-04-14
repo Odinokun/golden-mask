@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Inner'
+  - var title = 'Меню'
   - var pageHeaderTitle = 'Внутренняя страница'
 
 block content
@@ -9,50 +9,57 @@ block content
 
   //begin content
   section.main
+    
     include ../elements/clouds-top
 
     .container
 
       include ../elements/top-contacts
       
-      .page-list
+      .gallery-list
         header.page-header
-          h1.page-header__title Меню
+          h1.page-header__title Галерея
 
-        p Ночной клуб «Golden Mask club» - это один из лучших стриптиз-клубов Санкт-Петербурга, где будут всегда рады видеть вас! В клубе бар с большим ассортиментом алкогольной и безалкогольной продукции, широкий выбор коктейлей. girl В ночном клубе «Golden Mask club» Вы всегда можете заказать банкет, провести корпоративное мероприятие, отметить день рождения и просто отлично провести время и зарядиться позитивом.
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя. 
-        p Это ночной клуб, который подарит вам незабываемый отдых. Не смотря на то, что наш <a href="#">стриптиз клуб</a> достаточно молодой, мы уже успели зарекомендовать себя не только среди любителей стриптиза, но и среди любителей просто хорошо провести время.
-        p Наша уютная атмосфера поможет отвлечься от насущных проблем, полностью расслабиться и прекрасно отдохнуть. Мы работаем для Вас и стремимся сделать все, чтобы Ваш отдых был незабываемым. Клуб <a href="#">предоставляет хорошую музыку</a>, просторный танцпол, стриптиз, разнообразные шоу-программы. Среди перечня услуг также можно найти караоке и кальян. 
-        p Оплачивать услуги можно как наличным, так и безналичным расчетом (банковские карты).
+        section.gallery
+          <a class="gallery__item" href="assets/img/gallery/gallery-01.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-01.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-02.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-02.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-03.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-03.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-01.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-01.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-02.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-02.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-03.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-03.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-01.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-01.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-02.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-02.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-03.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-03.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-01.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-01.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-02.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-02.jpg", alt="preview image")
+          </a>
+          <a class="gallery__item" href="assets/img/gallery/gallery-03.jpg" data-lightbox="girls-gallery">
+            img(src="assets/img/gallery/gallery-thumb-03.jpg", alt="preview image")
+          </a>
 
-        h1 Заголовок 1
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        h2 Заголовок 2
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        h3 Заголовок 3
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        h4 Заголовок 4
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        h5 Заголовок 5
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        h6 Заголовок 6
-        p В нашем клубе всегда много красивых людей, много как постоянных гостей, так и очаровательных красивых девушек-танцовщиц, которые всегда окружат Вас своим вниманием, а наше CRAZY MENU не оставит равнодушным даже самого искушенного посетителя.
-
-        
-        ol
-          li Пункт один
-          li Пункт два
-          li Пункт три
-
-        ul
-          li Пункт один
-          li Пункт два
-          li Пункт три
+    
+    include ../elements/clouds-bottom
   //end   content
 
   include ../sections/footer
