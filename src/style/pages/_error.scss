@@ -1,0 +1,55 @@
+.main-error {
+  & > .container {
+    min-height: 100vh;
+  }
+}
+.error-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.error-left {
+  width: 25%;
+  text-align: center;
+}
+.error-left__icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  background-image: url('../img/error-icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.error-left__text {
+  text-transform: uppercase;
+
+  @include font-size(36);
+  span {
+    @include font-size(60);
+  }
+}
+.error-middle {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  height: 670px;
+  background-image: url('../img/bg-404.png');
+  background-repeat: no-repeat;
+  background-position: 35% 100%;
+  background-size: contain;
+}
+.error-right {
+  width: 35%;
+  text-align: center;
+}
+.error-right__text {
+  @include font-size(18);
+}
