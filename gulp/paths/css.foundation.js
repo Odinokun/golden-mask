@@ -5,5 +5,5 @@ module.exports = [
   './node_modules/fullpage.js/dist/jquery.fullpage.css',
   './node_modules/slick-carousel/slick/slick.css',
   './node_modules/slick-carousel/slick/slick-theme.css',
-  './node_modules/lightbox2/dist/css/lightbox.min.css'
+  './node_modules/lightbox2/dist/css/lightbox.css'
 ];

@@ -66,3 +66,13 @@
     }
   }
 }
+//сброс картинок по умолчанию
+body:after {
+  content: '';
+}
+.lb-cancel,
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next,
+.lb-data .lb-close {
+  background-image: none;
+}
