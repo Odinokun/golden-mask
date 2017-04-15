@@ -1,7 +1,7 @@
 module.exports = function() {
 
     //mobile menu
-    $('.top-nav__list, .burger').on('click', function() {
+    $('.burger').on('click', function() {
         $('.top-nav__list').toggleClass('active');
         $(".burger").toggleClass('active');
         $('.top-contacts').removeClass('active');

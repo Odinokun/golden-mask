@@ -9,8 +9,25 @@
 
   @include font-size(24);
 }
+.menu__list {
+  @include m425() {
+    padding-left: 20px;
+  }
+}
 .menu__item {
   padding: 7px;
 
   @include font-size(18);
+}
+.page-list__menu {
+  margin-bottom: 70px;
+  padding: 10px 20px;
+  .page-header__title {
+    @include m425() {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
 }

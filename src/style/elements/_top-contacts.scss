@@ -7,6 +7,12 @@
   justify-content: space-between;
   align-items: center;
   @include m760() {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
     flex-direction: column;
     height: 0;
@@ -18,7 +24,7 @@
 
     justify-content: flex-start;
     &.active {
-      height: calc(100vh - 20px);
+      height: 100vh;
     }
   }
 }
