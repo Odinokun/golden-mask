@@ -154,11 +154,22 @@ ul {
   position: relative;
   z-index: 20;
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 0 35px 35px 35px;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(136, 139, 151, .35);
+    @include m760() {
+      margin-top: 70px;
+    }
+  .page-header__title {
+    @include m425() {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 // обнуление slick slider loader
 .slick-loading .slick-list {

@@ -56,7 +56,7 @@
   background-position: 50% 0;
 
   @include m760() {
-    background-position: 50% 40px;
+    background-position: 50% 25%;
   }
   .cloud {
     top: 0;
@@ -76,6 +76,9 @@
   bottom: 0;
   background-image: url('../img/cloud-bottom.png');
   background-position: 50% 100%;
+  @include m760() {
+    background-position: 50% 80%;
+  }
   .cloud {
     bottom: 0;
   }
