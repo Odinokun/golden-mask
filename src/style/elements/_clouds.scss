@@ -42,7 +42,6 @@
   height: 300px;
   pointer-events: none;
   background-repeat: repeat-x;
-  background-position: 50% 100%;
   background-size: contain;
 }
 .top-section {
@@ -54,6 +53,11 @@
 .clouds-top {
   top: 0;
   background-image: url('../img/cloud-top.png');
+  background-position: 50% 0;
+
+  @include m760() {
+    background-position: 50% 40px;
+  }
   .cloud {
     top: 0;
   }
@@ -71,6 +75,7 @@
 .clouds-bottom {
   bottom: 0;
   background-image: url('../img/cloud-bottom.png');
+  background-position: 50% 100%;
   .cloud {
     bottom: 0;
   }
@@ -78,6 +83,10 @@
 .clouds {
   position: relative;
   height: 300px;
+
+  @include m760() {
+    display: none;
+  }
 }
 .cloud {
   position: absolute;

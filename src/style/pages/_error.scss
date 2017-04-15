@@ -13,10 +13,20 @@
 
   align-items: center;
   justify-content: space-between;
+  @include m760() {
+    flex-direction: column;
+
+    justify-content: center;
+  }
 }
 .error-left {
   width: 25%;
   text-align: center;
+
+  @include m760() {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 .error-left__icon {
   width: 65px;
@@ -45,10 +55,22 @@
   background-repeat: no-repeat;
   background-position: 35% 100%;
   background-size: contain;
+
+  @include m760() {
+    display: none;
+  }
 }
 .error-right {
   width: 35%;
   text-align: center;
+
+  @include m760() {
+    width: 100%;
+    max-width: 300px;
+  }
+  @include m425() {
+    max-width: 280px;
+  }
 }
 .error-right__text {
   @include font-size(18);

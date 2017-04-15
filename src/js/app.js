@@ -20,4 +20,8 @@ $(function() {
   require('./modules/joinTabs')();
   // end Tab in join section index.html
 
+  // begin mobile menu & burger
+  require('./modules/menu')();
+  // end mobile menu & burger
+
 });
