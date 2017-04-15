@@ -10,6 +10,11 @@
 }
 
 // ===== responsive =====
+@mixin m1280 {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
 @mixin m1200 {
   @media screen and (max-width: 1200px) {
     @content;
