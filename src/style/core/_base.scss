@@ -93,8 +93,8 @@ ul {
 }
 .main {
   position: relative;
-  background-color: #e1e1e6;
   overflow: hidden;
+  background-color: #e1e1e6;
 
   flex: 1 0 auto;
 }
@@ -122,11 +122,15 @@ ul {
   text-align: center;
 }
 .page-header__title {
-  font-size: 30px;
+  @include font-size(30);
   position: relative;
   display: inline-block;
   margin-bottom: 0;
   text-transform: none;
+  @include m425() {
+    @include font-size(22);
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -159,9 +163,10 @@ ul {
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(136, 139, 151, .35);
-    @include m760() {
-      margin-top: 70px;
-    }
+
+  @include m760() {
+    margin-top: 70px;
+  }
   .page-header__title {
     @include m425() {
       &::before,

@@ -24,4 +24,8 @@ $(function() {
   require('./modules/menu')();
   // end mobile menu & burger
 
+  // begin scroll 2 ancor
+  require('./modules/scroll2ancor')();
+  // end scroll 2 ancor
+
 });

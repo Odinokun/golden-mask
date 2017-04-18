@@ -16,4 +16,12 @@ module.exports = function() {
         $(".burger").removeClass('active');
     });
 
+    //mobile contacts-menu
+    $('.top-nav__link').on('click', function() {
+        $('.top-contacts').removeClass('active');
+        $('.top-contacts__open-btn').removeClass('active');
+        $('.top-nav__list').removeClass('active');
+        $(".burger").removeClass('active');
+    });
+
 };

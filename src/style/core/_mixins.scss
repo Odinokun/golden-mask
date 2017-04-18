@@ -31,7 +31,17 @@
   }
 }
 @mixin m760 {
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin m640 {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+@mixin m570 {
+  @media screen and (max-width: 570px) {
     @content;
   }
 }
