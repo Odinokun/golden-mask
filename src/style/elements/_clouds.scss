@@ -106,10 +106,10 @@
   }
 }
 .cloud:nth-child(even) {
-  animation: rotateEven 8s infinite linear;
+  animation: rotateEven 30s infinite linear;
 }
 .cloud:nth-child(odd) {
-  animation: rotateOdd 10s infinite linear;
+  animation: rotateOdd 40s infinite linear;
 }
 .cloud-00 {
   left: -5%;

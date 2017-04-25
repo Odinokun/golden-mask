@@ -2,7 +2,7 @@ module.exports = function() {
 
   // begin Full Page Scroll
    function windowSize(){
-    if (($(window).width() <= '767') || ($(window).height() <= '400')){
+    if (($(window).width() <= '767') || ($(window).height() <= '840')){
       $.fn.fullpage.destroy('all');
       // console.log('small screen');
     } else {
