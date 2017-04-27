@@ -30,8 +30,9 @@
     @content;
   }
 }
+// обращаем внимание на РЕАЛЬНЫЙ брейкпоинт
 @mixin m760 {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1110px), screen and (max-height: 899px) {
     @content;
   }
 }

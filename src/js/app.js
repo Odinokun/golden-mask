@@ -1,5 +1,9 @@
 $(function() {
 
+  // begin preloader
+  require('./modules/preloader')();
+  // end preloader
+
   // begin require SVG for IE
   require('./modules/svg4everybody')();
   // end   require SVG for IE
@@ -27,5 +31,6 @@ $(function() {
   // begin scroll 2 ancor
   require('./modules/scroll2ancor')();
   // end scroll 2 ancor
+
 
 });

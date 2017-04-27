@@ -22,7 +22,16 @@ html(lang="ru")
     //- script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     <![endif]-->
 
+    style.
+      .cp-wrapper{position:fixed;z-index:10001;top:0;right:0;bottom:0;left:0;display:flex;margin:0;text-align:center;background-color:#fff;justify-content:center;align-items:center}.cp-spinners{margin:10px auto}.cp-spinner-block{display:inline-block;width:40%;margin:40px 20px}.cp-spinner{position:relative;display:inline-block;box-sizing:border-box;width:48px;height:48px}.cp-heart:after,.cp-heart:before{position:absolute;top:0;display:inline-block;box-sizing:border-box;width:24px;height:35px;content:' ';border-radius:12px 12px 0 0;background-color:#eb68a1}.cp-heart{animation:cp-heart-animate 2s ease-in-out infinite}.cp-heart:before{left:8px;transform:rotate(-45deg)}.cp-heart:after{right:8px;transform:rotate(45deg)}@keyframes cp-heart-animate{0%,100%,30%,60%{transform:scale(.9);transform-origin:center}15%,45%{transform:scale(1.4);transform-origin:center}}
+    
   body
+    //- preloader
+    .cp-wrapper
+      .cp-spinner-block
+        .cp-spinner.cp-heart
+
+
     block content
 
 
