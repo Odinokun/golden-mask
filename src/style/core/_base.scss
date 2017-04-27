@@ -27,8 +27,11 @@ body {
   flex-direction: column;
   min-width: 320px;
 }
+html.fix,
 body.fix {
-  position: fixed;
+  @include m760() {
+    position: fixed;
+  }
 }
 h1,
 h2,
@@ -122,15 +125,15 @@ ul {
   text-align: center;
 }
 .page-header__title {
-  @include font-size(30);
   position: relative;
   display: inline-block;
   margin-bottom: 0;
   text-transform: none;
+
+  @include font-size(30);
   @include m425() {
     @include font-size(22);
   }
-
   &::before,
   &::after {
     position: absolute;

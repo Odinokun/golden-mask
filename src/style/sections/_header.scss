@@ -5,10 +5,16 @@
   right: 0;
   left: 0;
   text-align: center;
-  // background-color: #ff0;
   background-image: url('../img/bg-menu.png');
-  background-position: 0 0; 
   background-repeat: repeat-x;
+  background-position: 0 0;
+
+  @include m760() {
+    background-color: #fff;
+    .container {
+      padding: 10px 30px;
+    }
+  }
 }
 .top-nav__list {
   display: flex;
