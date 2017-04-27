@@ -58,29 +58,15 @@
 
   @include m760() {
     background-position: 50% 0%;
-    // background-position: 50% 25%;
   }
   .cloud {
     top: 0;
   }
 }
-// .main {
-//   .clouds-top {
-//     top: 0;
-//   }
-// }
-// .contacts-section {
-//   .clouds-bottom {
-//     bottom: -100px;
-//   }
-// }
 .clouds-bottom {
   bottom: 0;
   background-image: url('../img/cloud-bottom.png');
   background-position: 50% 100%;
-  @include m760() {
-    // background-position: 50% 80%;
-  }
   .cloud {
     bottom: 0;
   }
@@ -91,14 +77,12 @@
   height: 300px;
 
 }
-
-
 .cloud {
   position: absolute;
   bottom: 0;
   width: 300px;
   height: 200px;
-  background-image: url('../img/cloud.png');
+  // background-image: url('../img/cloud.png');
   background-repeat: no-repeat;
   background-size: contain;
   @include m760() {
@@ -106,74 +90,118 @@
   }
 }
 .cloud:nth-child(even) {
-  animation: rotateEven 30s infinite linear;
+  // animation: rotateEven 30s infinite linear;
 }
 .cloud:nth-child(odd) {
-  animation: rotateOdd 40s infinite linear;
+  // animation: rotateOdd 40s infinite linear;
 }
 .cloud-00 {
+  animation: rotateEven 30s infinite linear;
+  background-image: url('../img/cloud-01.png');
   left: -5%;
 }
 .cloud-01 {
+  animation: rotateOdd 50s infinite linear;
+  background-image: url('../img/cloud-02.png');
   left: 0;
 }
 .cloud-02 {
+  animation: rotateEven 20s infinite linear;
+  background-image: url('../img/cloud-03.png');
   left: 5%;
 }
 .cloud-03 {
+  animation: rotateOdd 40s infinite linear;
+  background-image: url('../img/cloud-04.png');
   left: 10%;
 }
 .cloud-04 {
+  animation: rotateEven 30s infinite linear;
+  background-image: url('../img/cloud-05.png');
   left: 15%;
 }
 .cloud-05 {
+  animation: rotateOdd 55s infinite linear;
+  background-image: url('../img/cloud-06.png');
   left: 20%;
 }
 .cloud-06 {
+  animation: rotateEven 30s infinite linear;
+  background-image: url('../img/cloud-07.png');
   left: 25%;
 }
 .cloud-07 {
+  animation: rotateOdd 20s infinite linear;
+  background-image: url('../img/cloud-08.png');
   left: 30%;
 }
 .cloud-08 {
+  animation: rotateEven 25s infinite linear;
+  background-image: url('../img/cloud-09.png');
   left: 35%;
 }
 .cloud-09 {
+  animation: rotateOdd 50s infinite linear;
+  background-image: url('../img/cloud-10.png');
   left: 40%;
 }
 .cloud-10 {
+  animation: rotateEven 55s infinite linear;
+  background-image: url('../img/cloud-11.png');
   left: 45%;
 }
 .cloud-11 {
+  animation: rotateOdd 30s infinite linear;
+  background-image: url('../img/cloud-01.png');
   left: 50%;
 }
 .cloud-22 {
+  animation: rotateEven 20s infinite linear;
+  background-image: url('../img/cloud-02.png');
   left: 55%;
 }
 .cloud-13 {
+  animation: rotateOdd 50s infinite linear;
+  background-image: url('../img/cloud-03.png');
   left: 60%;
 }
 .cloud-14 {
+  animation: rotateEven 40s infinite linear;
+  background-image: url('../img/cloud-04.png');
   left: 65%;
 }
 .cloud-15 {
+  animation: rotateOdd 30s infinite linear;
+  background-image: url('../img/cloud-05.png');
   left: 70%;
 }
 .cloud-16 {
+  animation: rotateEven 40s infinite linear;
+  background-image: url('../img/cloud-06.png');
   left: 75%;
 }
 .cloud-17 {
+  animation: rotateOdd 50s infinite linear;
+  background-image: url('../img/cloud-07.png');
   left: 80%;
 }
 .cloud-18 {
+  animation: rotateEven 30s infinite linear;
+  background-image: url('../img/cloud-08.png');
   left: 85%;
 }
 .cloud-19 {
+  animation: rotateOdd 30s infinite linear;
+  background-image: url('../img/cloud-09.png');
   left: 90%;
 }
 .cloud-20 {
+  animation: rotateEven 40s infinite linear;
+  background-image: url('../img/cloud-10.png');
   left: 95%;
 }
 .cloud-21 {
+  animation: rotateOdd 50s infinite linear;
+  background-image: url('../img/cloud-11.png');
   left: 100%;
 }
