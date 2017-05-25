@@ -44,6 +44,7 @@
   background-size: contain;
 }
 .clouds-top {
+  z-index: 5;
   top: 0;
   background-image: url('../img/cloud-top.png');
   background-position: 50% 0;

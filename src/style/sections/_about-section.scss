@@ -34,6 +34,9 @@
 .about-section__body {
   display: flex;
   height: 100%;
+  margin-top: -180px;
+  margin-bottom: -25px;
+  padding-top: 180px;
   background-image: url('../img/bg-about-section.png');
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -42,6 +45,8 @@
   flex-wrap: wrap;
   align-items: center;
   @include m760() {
+    padding-top: 0;
+    margin: 0;
     background-image: none;
   }
 }

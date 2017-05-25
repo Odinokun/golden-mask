@@ -35,14 +35,15 @@
 
 .join-section__body {
   position: relative;
-  z-index: 20;
+  // z-index: 20;
+  z-index: 1;
 }
 .join-section__body-pic {
   img {
     display: block;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 780px;
+    margin: -80px auto 0;
   }
 }
 .join-section-tabs__header {
