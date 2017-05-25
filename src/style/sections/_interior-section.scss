@@ -39,12 +39,12 @@
 
 .interior-section__body {
   position: relative;
-  z-index: 20;
+  z-index: 0;
   height: 100%;
   &::before {
     position: absolute;
-    right: -130px;
-    bottom: -0;
+    top: 80px;
+    left: -56%;
     display: block;
     width: 100%;
     height: 500px;
