@@ -5,9 +5,8 @@
   right: 0;
   left: 0;
   text-align: center;
-  background-image: url('../img/bg-menu.png');
-  background-repeat: repeat-x;
-  background-position: 0 0;
+  background: linear-gradient(to top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 100%);
+
 
   @include m760() {
     background-color: #fff;

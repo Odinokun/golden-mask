@@ -1,7 +1,17 @@
 .menu__article {
   padding-bottom: 30px;
 }
-
+.menu__header {
+  display: flex;
+}
+.menu__icon {
+  width: 50px;
+  margin-top: -10px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
 .menu__title {
   margin-bottom: 0;
   text-transform: uppercase;
