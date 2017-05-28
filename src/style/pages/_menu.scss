@@ -2,15 +2,16 @@
   padding-bottom: 30px;
 }
 .menu__header {
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100px;
   display: flex;
-}
-.menu__icon {
-  width: 50px;
-  margin-top: -10px;
-  img {
-    display: block;
-    width: 100%;
-  }
+  align-items: center;
+  padding: 10px 10px 10px 45px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .menu__title {
   margin-bottom: 0;

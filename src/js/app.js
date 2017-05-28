@@ -13,7 +13,7 @@ $(function() {
   // end   Chrome Smooth Scroll
 
   // begin Full Page Scroll
-  require('./modules/fullPageScroll')();
+  // require('./modules/fullPageScroll')();
   // end   Full Page Scroll
 
   // begin Interior section Slider

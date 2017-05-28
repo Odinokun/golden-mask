@@ -41,7 +41,7 @@
   width: 100%;
   pointer-events: none;
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
 }
 .clouds-top {
   z-index: 5;
@@ -49,7 +49,7 @@
   background-image: url('../img/cloud-top.png');
   background-position: 50% 0;
 
-  @include m760() {
+  @include m768() {
     background-position: 50% 0;
   }
   .cloud {
@@ -59,7 +59,7 @@
 .clouds-bottom {
   bottom: 0;
   background-image: url('../img/cloud-bottom.png');
-  background-position: 50% 100%;
+  background-position: 50% 0;
   .cloud {
     bottom: 0;
   }
@@ -76,10 +76,6 @@
   height: 200px;
   background-repeat: no-repeat;
   background-size: contain;
-
-  @include m760() {
-    display: none;
-  }
 }
 .cloud:nth-child(even) {
   // animation: rotateEven 30s infinite linear;
