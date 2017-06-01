@@ -16,9 +16,18 @@
   }
 }
 #lightbox {
+  position: fixed;
   top: 50% !important;
   transform: translateY(-50%);
-  position: fixed;
+}
+.mother-gallery {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  & > a {
+    margin-bottom: 20px;
+  }
 }
 .gallery {
   display: flex;
